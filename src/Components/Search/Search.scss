@@ -1,0 +1,106 @@
+:root {
+    --primaryColor: #7a63f1;
+    --secondaryColor: #ebe8fc;
+    --textColor: #a3a3a3;
+    --greyColor: #f4f4f4;
+    --blackColor: #434344;
+    --whiteColor: #f5f4fa;
+  }
+  
+  .search {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+  
+    .title {
+      color: var(--blackColor);
+      font-size: 22px;
+      padding: 1rem 0;
+      // text-align: center;
+      font-weight: 700;
+      line-height: 1.7rem;
+    }
+  
+    .searchDiv {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr;
+      // align-items: center;
+      width: 100%;
+      max-width: 400px;
+      // justify-content: center;
+      // text-align: center;
+      justify-content: space-around;
+  
+      input {
+        border-radius: 10px;
+        border: 1px solid var(--secondaryColor);
+        padding: 10px 15px;
+        outline: none;
+        width: 100%;
+        transition: border 0.3s;
+  
+        &:focus {
+          border: 1px solid var(--primaryColor);
+        }
+      }
+  
+      .btn {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 100%;
+        max-width: 150px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: var(--primaryColor);
+        color: var(--whiteColor);
+        font-weight: 600;
+        // text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          // Use a manual color here since darken() does not work with CSS variables directly.
+          background-color: #6956d9; // A manually darkened version of var(--primaryColor)
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .searchDiv {
+      grid-template-columns: 1fr auto;
+    }
+  
+    input {
+      width: auto;
+      flex: 1;
+    }
+  
+    .btn {
+      width: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .title {
+      font-size: 26px;
+    }
+  
+    .searchDiv {
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+    }
+  
+    input {
+      padding: 10px 20px;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+    }
+  }
+  

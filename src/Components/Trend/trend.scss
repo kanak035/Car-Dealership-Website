@@ -1,0 +1,298 @@
+// :root {
+//     --primaryColor: #7a63f1;
+//     --secondaryColor: #ebe8fc;
+//     --textColor: #a3a3a3;
+//     --greyColor: #f4f4f4;
+//     --blackColor: #434344;
+//     --whiteColor: #f5f4fa;
+//   }
+//   .trending{
+//     .setContainer{
+//         .secHeading{
+//             justify-content: space-between;
+//             padding: 1rem 0;
+  
+           
+//         }
+        
+//     }
+//   }
+//   .navBtns{
+//     padding-left: 5px;
+  
+//     .icon{
+//         padding: 3px 5px;
+//         background: var(--secondaryColor);
+//         border-radius: 3px;
+//         font-size: 30px;
+//         cursor: pointer;
+
+//         &:hover{
+//             background: var(--primaryColor);
+//             color: var(--whiteColor);
+//         }
+//     }
+//   }
+//   .carContainer{
+//     gap: 2rem;
+
+//     .singleCar{
+//       transition: .3s ease-in-out;
+//       text-align: left;
+//       .imgDiv{
+//         height: 200px;
+//         width: 100%;
+//         overflow: hidden;
+//         border-radius: 10px;
+//         border: 5px solid transparent;
+
+//         img{
+//           height: 100%;
+//           width: 100%;
+//         }
+//       }
+//       .carTitle{
+//         color: var(--blackColor);
+//         font-size: 15px;
+//         padding-top: 10px;
+//       }
+//       .miles{
+//         color: var(--blackColor);
+//         opacity: .7;
+//         font-size: 14px;
+//       }
+//       .AWD{
+//         padding: 1rem 0;
+//         color: var(--blackColor);
+//         font-weight: 600;
+//         font-size: 15px;
+//       }
+//       .price_seller{
+//         gap: 1rem;
+
+//         span{
+//           cursor: pointer;
+//           padding: .5rem 1rem;
+//           border-radius: 3px;
+//           font-weight: 600;
+//         }
+//         .price{
+//           background: var(--secondaryColor);
+//           color: var(--primaryColor);
+//         }
+//         .seller{
+//           background: var(--secondaryColor);
+//           color: var(--primaryColor);
+//         }
+//       }
+//       &:hover{
+//         transform: translateY(-9px);
+
+//         .imgDiv{
+//           border:5px solid var(--primaryColor);
+//         }
+//       }
+//     }
+//   }
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --blackColor: #434344;
+  --whiteColor: #f5f4fa;
+}
+
+.trending {
+  .setContainer {
+    .secHeading {
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.navBtns {
+  padding-left: 5px;
+
+  .icon {
+    padding: 3px 5px;
+    background: var(--secondaryColor);
+    border-radius: 3px;
+    font-size: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--primaryColor);
+      color: var(--whiteColor);
+    }
+  }
+}
+
+.carContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+
+  .singleCar {
+    flex: 1 1 calc(33.333% - 2rem);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .imgDiv {
+      height: 200px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 5px solid transparent;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .carTitle {
+      color: var(--blackColor);
+      font-size: 15px;
+      padding-top: 10px;
+    }
+
+    .miles {
+      color: var(--blackColor);
+      opacity: 0.7;
+      font-size: 14px;
+    }
+
+    .AWD {
+      padding: 1rem 0;
+      color: var(--blackColor);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .price_seller {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      span {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+
+      .price {
+        background: var(--secondaryColor);
+        color: var(--primaryColor);
+      }
+
+      .seller {
+        background: var(--secondaryColor);
+        color: var(--primaryColor);
+      }
+    }
+
+    &:hover {
+      transform: translateY(-9px);
+
+      .imgDiv {
+        border: 5px solid var(--primaryColor);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carContainer {
+    flex-direction: column;
+  }
+
+  .navBtns {
+    padding-left: 2px;
+
+    .icon {
+      font-size: 25px;
+      padding: 2px 4px;
+    }
+  }
+
+  .carTitle {
+    font-size: 14px;
+  }
+
+  .miles {
+    font-size: 12px;
+  }
+
+  .AWD {
+    font-size: 14px;
+  }
+
+  .price_seller {
+    span {
+      font-size: 14px;
+      padding: 0.3rem 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .carContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .navBtns {
+    padding-left: 0;
+
+    .icon {
+      font-size: 20px;
+      padding: 1px 3px;
+    }
+  }
+
+  .carTitle {
+    font-size: 13px;
+  }
+
+  .miles {
+    font-size: 11px;
+  }
+
+  .AWD {
+    font-size: 13px;
+  }
+
+  .price_seller {
+    span {
+      font-size: 13px;
+      padding: 0.2rem 0.6rem;
+    }
+  }
+}
+
+  @media screen  and (min-width:520px) {
+    .trending{
+      .setContainer{
+        .secHeading{
+          margin-bottom: 1rem;
+
+          .secTitle{
+            font-size: 23px;
+          }
+          .navBtns{
+            gap: .5rem;
+          }
+        }
+      }
+    }
+  }
+

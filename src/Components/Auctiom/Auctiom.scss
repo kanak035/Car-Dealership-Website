@@ -1,0 +1,567 @@
+// // :root {
+// //     --primaryColor: #7a63f1;
+// //     --secondaryColor: #ebe8fc;
+// //     --textColor: #a3a3a3;
+// //     --greyColor: #f4f4f4;
+// //     --blackColor: #434344;
+// //     --whiteColor: #f5f4fa;
+// //   }
+// //   .trending{
+// //     .setContainer{
+// //         .secHeading{
+// //             justify-content: space-between;
+// //             padding: 1rem 0;
+  
+           
+// //         }
+        
+// //     }
+// //   }
+// //   .navBtns{
+// //     padding-left: 5px;
+  
+// //     .icon{
+// //         padding: 3px 5px;
+// //         background: var(--secondaryColor);
+// //         border-radius: 3px;
+// //         font-size: 30px;
+// //         cursor: pointer;
+
+// //         &:hover{
+// //             background: var(--primaryColor);
+// //             color: var(--whiteColor);
+// //         }
+// //     }
+// //   }
+// //   .carContainer{
+// //     gap: 2rem;
+
+// //     .singleCar{
+// //       transition: .3s ease-in-out;
+// //       text-align: left;
+// //       padding: 1rem;
+// //       border-radius: 10px;
+// //       .imgDiv{
+// //         height: 200px;
+// //         width: 100%;
+// //         overflow: hidden;
+// //         border-radius: 10px;
+// //         border: 5px solid transparent;
+
+// //         img{
+// //           height: 100%;
+// //           width: 100%;
+// //           object-fit: contain;
+// //         }
+// //       }
+// //       .carTitle{
+// //         color: var(--blackColor);
+// //         font-size: 15px;
+// //         padding-top: 10px;
+// //       }
+// //       .miles{
+// //         color: var(--blackColor);
+// //         opacity: .7;
+// //         font-size: 14px;
+// //       }
+// //       .AWD{
+// //         padding: 1rem 0;
+// //         color: var(--blackColor);
+// //         font-weight: 600;
+// //         font-size: 15px;
+// //       }
+// //       .price_buyBtn{
+// //         gap: 1rem;
+
+// //         span{
+// //           cursor: pointer;
+// //           padding: .5rem 1rem;
+// //           border-radius: 3px;
+// //           font-weight: 600;
+// //         }
+// //         .price{
+// //           background: var(--secondaryColor);
+// //           color: var(--primaryColor);
+// //         }
+// //         .buyBtn{
+// //           background: var(--primaryColor);
+// //           color: var(--whiteColor);
+// //           cursor: pointer;
+
+// //           &:hover{
+// //             background: var(--secondaryColor);
+// //             color: var(--textColor);
+// //           }
+// //         }
+// //       }
+// //       &:hover{
+// //         transform: translateY(-9px);
+// //         padding: 1rem;
+// //         background: var(--secondaryColor);
+
+// //         .price_buyBtn{
+// //           span{
+// //             border: 1px solid var(--primaryColor);
+// //           }
+// //         }
+// //       }
+// //     }
+
+// //     .singleCarActive{
+// //       padding: 1rem;
+// //       background: var(--secondaryColor);
+
+// //       .price_buyBtn{
+// //         span{
+// //           border: 1px solid var();
+// //         }
+// //       }
+// //     }
+// //   }
+// :root {
+//   --primaryColor: #7a63f1;
+//   --secondaryColor: #ebe8fc;
+//   --textColor: #a3a3a3;
+//   --greyColor: #f4f4f4;
+//   --blackColor: #434344;
+//   --whiteColor: #f5f4fa;
+// }
+
+// .trending {
+//   .setContainer {
+//     .secHeading {
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 1rem 0;
+//     }
+//   }
+// }
+
+// // .navBtns {
+// //   padding-left: 5px;
+
+// //   .icon {
+// //     padding: 3px 5px;
+// //     background: var(--secondaryColor);
+// //     border-radius: 3px;
+// //     font-size: 30px;
+// //     cursor: pointer;
+
+// //     &:hover {
+// //       background: var(--primaryColor);
+// //       color: var(--whiteColor);
+// //     }
+// //   }
+// // }
+
+// // .carContainer {
+// //   display: flex;
+// //     flex-direction: column; /* Default to column for smaller screens */
+// //     gap: 1.5rem;
+// //     overflow-y: auto;
+
+// //   .singleCar {
+// //     transition: .3s ease-in-out;
+// //     text-align: left;
+// //     padding: 1rem;
+// //     border-radius: 10px;
+// //     background: var(--whiteColor);
+
+// //     .imgDiv {
+// //       height: 200px;
+// //       width: 100%;
+// //       overflow: hidden;
+// //       border-radius: 10px;
+// //       border: 5px solid transparent;
+
+// //       img {
+// //         height: 100%;
+// //         width: 100%;
+// //         object-fit: cover;
+// //       }
+// //     }
+
+// //     .carTitle {
+// //       color: var(--blackColor);
+// //       font-size: 15px;
+// //       padding-top: 10px;
+// //     }
+
+// //     .miles {
+// //       color: var(--blackColor);
+// //       opacity: .7;
+// //       font-size: 14px;
+// //     }
+
+// //     .AWD {
+// //       padding: 1rem 0;
+// //       color: var(--blackColor);
+// //       font-weight: 600;
+// //       font-size: 15px;
+// //     }
+
+// //     .price_buyBtn {
+// //       display: flex;
+// //       gap: 1rem;
+
+// //       span {
+// //         cursor: pointer;
+// //         padding: .5rem 1rem;
+// //         border-radius: 3px;
+// //         font-weight: 600;
+// //       }
+
+// //       .price {
+// //         background: var(--secondaryColor);
+// //         color: var(--primaryColor);
+// //       }
+
+// //       .buyBtn {
+// //         background: var(--primaryColor);
+// //         color: var(--whiteColor);
+// //         cursor: pointer;
+
+// //         &:hover {
+// //           background: var(--secondaryColor);
+// //           color: var(--textColor);
+// //         }
+// //       }
+// //     }
+
+// //     &:hover {
+// //       transform: translateY(-9px);
+// //       padding: 1rem;
+// //       background: var(--secondaryColor);
+
+// //       .price_buyBtn {
+// //         span {
+// //           border: 1px solid var(--primaryColor);
+// //         }
+// //       }
+// //     }
+// //   }
+
+// //   .singleCarActive {
+// //     padding: 1rem;
+// //     background: var(--secondaryColor);
+
+// //     .price_buyBtn {
+// //       span {
+// //         border: 1px solid var(--primaryColor);
+// //       }
+// //     }
+// //   }
+// // }
+
+// // /* Responsive Styles */
+// // @media (min-width: 576px) {
+// //   .carContainer {
+// //     grid-template-columns: repeat(1, 1fr);
+// //   }
+// // }
+
+// // @media (min-width: 768px) {
+// //   .carContainer {
+// //     grid-template-columns: repeat(3, 1fr);
+// //   }
+// // }
+
+// // @media (min-width: 992px) {
+// //   .carContainer {
+// //     grid-template-columns: repeat(4, 1fr);
+// //   }
+// // }
+
+// // @import "../../styles/variables"; /* Import your custom variables */
+
+// .auction {
+//   .secHeading {
+//     justify-content: space-between;
+//   }
+
+//   .navBtns {
+//     .icon {
+//       padding: 10px;
+//       background: var(--secondaryColor);
+//       border-radius: 50%;
+//       font-size: 24px;
+//       cursor: pointer;
+//       color: var(--primaryColor);
+
+//       &:hover {
+//         background: var(--secondaryColor);
+//         color: var(--textColor);
+//       }
+//     }
+
+//     .leftIcon {
+//       margin-right: 10px;
+//     }
+
+//     .rightIcon {
+//       margin-left: 10px;
+//     }
+//   }
+
+//   .carContainer {
+//     display: flex;
+//     overflow-x: auto; /* Enable horizontal scrolling */
+//     gap: 1rem;
+//     padding: 1rem 0;
+
+//     .singleCar {
+//       flex: 0 0 300px; /* Adjust width of each car item */
+//       transition: .3s ease-in-out;
+//       text-align: left;
+//       padding: 1rem;
+//       border-radius: 10px;
+//       background: var(--whiteColor);
+
+//       .imgDiv {
+//         height: 200px;
+//         width: 100%;
+//         overflow: hidden;
+//         border-radius: 10px;
+//         border: 5px solid transparent;
+
+//         img {
+//           height: 100%;
+//           width: 100%;
+//           object-fit: cover;
+//         }
+//       }
+
+//       .carTitle {
+//         color: var(--blackColor);
+//         font-size: 15px;
+//         padding-top: 10px;
+//       }
+
+//       .miles {
+//         color: var(--blackColor);
+//         opacity: .7;
+//         font-size: 14px;
+//       }
+
+//       .AWD {
+//         padding: 1rem 0;
+//         color: var(--blackColor);
+//         font-weight: 600;
+//         font-size: 15px;
+//       }
+
+//       .price_buyBtn {
+//         display: flex;
+//         gap: 1rem;
+
+//         .price {
+//           background: var(--secondaryColor);
+//           color: var(--primaryColor);
+//           padding: .5rem 1rem;
+//           border-radius: 3px;
+//           font-weight: 600;
+//           cursor: pointer;
+//         }
+
+//         .buyBtn {
+//           background: var(--primaryColor);
+//           color: var(--whiteColor);
+//           padding: .5rem 1rem;
+//           border-radius: 3px;
+//           font-weight: 600;
+//           cursor: pointer;
+
+//           &:hover {
+//             background:var(--secondaryColor);
+//             color: var(--textColor);
+//           }
+//         }
+//       }
+
+//       &:hover {
+//         transform: translateY(-9px);
+//         padding: 1rem;
+//         background: var(--secondaryColor);
+
+//         .price_buyBtn {
+//           .price {
+//             border: 1px solid var(--primaryColor);
+//           }
+//         }
+//       }
+//     }
+
+//     @media (max-width: 576px) {
+//       flex-direction: column;
+//       overflow-x: hidden;
+
+//       .singleCar {
+//         flex: 1 0 100%; /* Full width for smaller screens */
+//         margin-bottom: 1rem; /* Space between items */
+//       }
+//     }
+//   }
+// }
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --blackColor: #434344;
+  --whiteColor: #f5f4fa;
+}
+.trending{
+  .setContainer{
+      .secHeading{
+          justify-content: center;
+          padding: 1rem 0;
+
+         
+      }
+      
+  }
+}
+.navBtns{
+  padding-left: 5px;
+
+  .icon{
+      padding: 3px 5px;
+      background: var(--secondaryColor);
+      border-radius: 3px;
+      font-size: 30px;
+      cursor: pointer;
+
+      &:hover{
+          background: var(--primaryColor);
+          color: var(--whiteColor);
+      }
+  }
+}
+.carContainer,.carContainer2{
+  gap: 2rem;
+
+  .singleCar{
+    transition: .3s ease-in-out;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    .imgDiv{
+      // height: 200px;
+      // width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 5px solid transparent;
+
+      img{
+        // height: 100%;
+        // width: 100%;
+        object-fit: contain;
+      }
+    }
+    .carTitle{
+      color: var(--blackColor);
+      font-size: 15px;
+      padding-top: 10px;
+    }
+    .miles{
+      color: var(--blackColor);
+      opacity: .7;
+      font-size: 14px;
+    }
+    .AWD{
+      padding: 1rem 0;
+      color: var(--blackColor);
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .price_buyBtn{
+      gap: 1rem;
+
+      span{
+        cursor: pointer;
+        padding: .5rem 1rem;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+      .price{
+        background: var(--secondaryColor);
+        color: var(--primaryColor);
+      }
+      .buyBtn{
+        background: var(--primaryColor);
+        color: var(--whiteColor);
+        cursor: pointer;
+
+        &:hover{
+          background: var(--secondaryColor);
+          color: var(--textColor);
+        }
+      }
+    }
+    &:hover{
+      transform: translateY(-9px);
+      padding: 1rem;
+      background: var(--secondaryColor);
+
+      .price_buyBtn{
+        span{
+          border: 1px solid var(--primaryColor);
+        }
+      }
+    }
+  }
+
+  .singleCarActive{
+    padding: 1rem;
+    background: var(--secondaryColor);
+
+    .price_buyBtn{
+      span{
+        border: 1px solid var();
+      }
+    }
+  }
+}
+@media screen and (min-width: 840px){
+  .auction{
+    .secContainer{
+      .secHeading{
+        .secTitle{
+          font-size: 28px;
+        }
+        .navBtns{
+          gap: 1rem;
+          
+        }
+      }
+      .carContainer{
+        grid-template-columns: repeat(2,1fr);
+        .singleCar{
+          .carTitle{
+            font-size: 18px;
+          }
+          .miles,.AWD{
+            font-size: 16px;
+          }
+          .price_buyBtn{
+            font-weight: 600;
+          }
+        }
+      }
+      .carContainer2{
+        grid-template-columns: repeat(3,1fr);
+        .singleCar{
+          .carTitle{
+            font-size: 18px;
+          }
+          .miles,.AWD{
+            font-size: 16px;
+          }
+          .price_buyBtn{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

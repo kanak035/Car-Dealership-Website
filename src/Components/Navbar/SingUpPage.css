@@ -1,0 +1,59 @@
+.signUpPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.signUpPage .signUpContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+.signUpPage .signUpContent h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+.signUpPage .signUpContent form {
+  display: flex;
+  flex-direction: column;
+}
+.signUpPage .signUpContent form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.signUpPage .signUpContent form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signUpPage .signUpContent form button:hover {
+  background-color: #0056b3;
+}
+.signUpPage .signUpContent .closeBtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.signUpPage .signUpContent .closeBtn:hover {
+  background-color: #c82333;
+}/*# sourceMappingURL=SingUpPage.css.map */

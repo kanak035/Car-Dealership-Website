@@ -1,0 +1,133 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --blackColor: #434344;
+  --whiteColor: #f5f4fa;
+}
+
+.trending .setContainer .secHeading {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.navBtns {
+  padding-left: 5px;
+}
+.navBtns .icon {
+  padding: 3px 5px;
+  background: var(--secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.navBtns .icon:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.carContainer, .carContainer2 {
+  gap: 2rem;
+}
+.carContainer .singleCar, .carContainer2 .singleCar {
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.carContainer .singleCar .imgDiv, .carContainer2 .singleCar .imgDiv {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.carContainer .singleCar .imgDiv img, .carContainer2 .singleCar .imgDiv img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carContainer .singleCar .carTitle, .carContainer2 .singleCar .carTitle {
+  color: var(--blackColor);
+  font-size: 15px;
+  padding-top: 10px;
+}
+.carContainer .singleCar .miles, .carContainer2 .singleCar .miles {
+  color: var(--blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+}
+.carContainer .singleCar .AWD, .carContainer2 .singleCar .AWD {
+  padding: 1rem 0;
+  color: var(--blackColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+.carContainer .singleCar .price_buyBtn, .carContainer2 .singleCar .price_buyBtn {
+  gap: 1rem;
+}
+.carContainer .singleCar .price_buyBtn span, .carContainer2 .singleCar .price_buyBtn span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.carContainer .singleCar .price_buyBtn .price, .carContainer2 .singleCar .price_buyBtn .price {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+.carContainer .singleCar .price_buyBtn .buyBtn, .carContainer2 .singleCar .price_buyBtn .buyBtn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.carContainer .singleCar .price_buyBtn .buyBtn:hover, .carContainer2 .singleCar .price_buyBtn .buyBtn:hover {
+  background: var(--secondaryColor);
+  color: var(--textColor);
+}
+.carContainer .singleCar:hover, .carContainer2 .singleCar:hover {
+  transform: translateY(-9px);
+  padding: 1rem;
+  background: var(--secondaryColor);
+}
+.carContainer .singleCar:hover .price_buyBtn span, .carContainer2 .singleCar:hover .price_buyBtn span {
+  border: 1px solid var(--primaryColor);
+}
+.carContainer .singleCarActive, .carContainer2 .singleCarActive {
+  padding: 1rem;
+  background: var(--secondaryColor);
+}
+.carContainer .singleCarActive .price_buyBtn span, .carContainer2 .singleCarActive .price_buyBtn span {
+  border: 1px solid var();
+}
+
+@media screen and (min-width: 840px) {
+  .auction .secContainer .secHeading .secTitle {
+    font-size: 28px;
+  }
+  .auction .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .auction .secContainer .carContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .auction .secContainer .carContainer .singleCar .carTitle {
+    font-size: 18px;
+  }
+  .auction .secContainer .carContainer .singleCar .miles, .auction .secContainer .carContainer .singleCar .AWD {
+    font-size: 16px;
+  }
+  .auction .secContainer .carContainer .singleCar .price_buyBtn {
+    font-weight: 600;
+  }
+  .auction .secContainer .carContainer2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .auction .secContainer .carContainer2 .singleCar .carTitle {
+    font-size: 18px;
+  }
+  .auction .secContainer .carContainer2 .singleCar .miles, .auction .secContainer .carContainer2 .singleCar .AWD {
+    font-size: 16px;
+  }
+  .auction .secContainer .carContainer2 .singleCar .price_buyBtn {
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=Auctiom.css.map */
